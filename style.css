@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url('https://source.unsplash.com/random/1920x1080/?mountain'), url('mountain5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Ensure the background covers the entire screen */
+    color: #fff;
+    font-family: Consolas, monospace;
+}
+
+  
+  ::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and newer Edge */
+  }
+  
+  .app-window {
+    position: relative;
+    max-width: 800px;
+    margin: 150px auto; /* Adjust the margin-top value */
+    background-color: #212121;
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow for the window buttons */
+  }
+
+  
+  .window-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+    height: 30px;
+  }
+  
+  .window-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 5px;
+    margin-left: 8px;
+  }
+  
+  .window-button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  
+  .window-button.minimize {
+    background-color: #f4d742;
+  }
+  
+  .window-button.close {
+    background-color: #e74c3c;
+  }
+
+  .window-button.enlarge {
+    background-color: #2ecc71; 
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .output {
+    height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #212121;
+    border-radius: 5px;
+  }
+  
+  input[type="text"] {
+    background-color: transparent;
+    border: none;
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 46px;
+    appearance: none;
+    transition: border 0.15s ease 0s;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #626365;
+  }
+  
+  .contents {
+    background-color: #212121;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  a {
+    color: #4c4d4f;
+    text-decoration: none;
+  }
+  
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }
+  
+  .cursor {
+    display: inline-block;
+    animation: blink 1s infinite; /* Apply the animation */
+  }
+  
