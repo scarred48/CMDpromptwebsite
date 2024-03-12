@@ -8,23 +8,23 @@
     background-image: url('https://source.unsplash.com/random/1920x1080/?mountain'), url('mountain5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; /* Ensure the background covers the entire screen */
+    background-attachment: fixed; 
     color: #fff;
     font-family: Consolas, monospace;
 }
 
   
   ::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome, Safari, and newer Edge */
+    display: none; 
   }
   
   .app-window {
     position: relative;
     max-width: 800px;
-    margin: 150px auto; /* Adjust the margin-top value */
+    margin: 150px auto; 
     background-color: #212121;
     border-radius: 10px;
-    overflow: hidden; /* Hide overflow for the window buttons */
+    overflow: hidden; 
   }
 
   
@@ -120,6 +120,9 @@
   
   .cursor {
     display: inline-block;
-    animation: blink 1s infinite; /* Apply the animation */
+    animation: blink 1s infinite;
   }
   
+  .local-time {
+  margin-right: 10px;
+}
