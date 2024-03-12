@@ -10,8 +10,8 @@
 }
 
 body {
-  background-image: url("https://source.unsplash.com/random/1920x1080/?mountain"),
-    url("mountain5.jpg");
+  background-image: url("https://source.unsplash.com/random/1920x1080/?mountain");
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
